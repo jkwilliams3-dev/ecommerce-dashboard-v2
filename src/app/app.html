@@ -1,0 +1,211 @@
+<div class="dashboard">
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <span class="logo-icon">🛍️</span>
+        <h1>E-Commerce Dashboard</h1>
+      </div>
+      <div class="header-actions">
+        <button class="action-btn">
+          <span>➕</span>
+          Add Product
+        </button>
+        <button class="action-btn secondary">
+          <span>📊</span>
+          Reports
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Stats Overview -->
+    <section class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon revenue">💰</div>
+        <div class="stat-content">
+          <h3>Total Revenue</h3>
+          <div class="stat-value">$124,592</div>
+          <div class="stat-change positive">
+            <span>↗</span> +18.2% from last month
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon orders">📦</div>
+        <div class="stat-content">
+          <h3>Total Orders</h3>
+          <div class="stat-value">1,847</div>
+          <div class="stat-change positive">
+            <span>↗</span> +12.5% from last month
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon products">📦</div>
+        <div class="stat-content">
+          <h3>Products</h3>
+          <div class="stat-value">342</div>
+          <div class="stat-change neutral">
+            <span>→</span> +3 new this week
+          </div>
+        </div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-icon customers">👥</div>
+        <div class="stat-content">
+          <h3>Customers</h3>
+          <div class="stat-value">8,421</div>
+          <div class="stat-change positive">
+            <span>↗</span> +24.8% from last month
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Charts and Tables -->
+    <section class="content-grid">
+      <!-- Sales Chart -->
+      <div class="content-card chart-card">
+        <div class="card-header">
+          <h2>Sales Overview</h2>
+          <select class="period-select">
+            <option>Last 7 Days</option>
+            <option>Last 30 Days</option>
+            <option>Last 3 Months</option>
+          </select>
+        </div>
+        <div class="chart-container">
+          <canvas id="salesChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Recent Orders -->
+      <div class="content-card">
+        <div class="card-header">
+          <h2>Recent Orders</h2>
+          <button class="view-all-btn">View All →</button>
+        </div>
+        <div class="orders-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Product</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="order-id">#ORD-1847</span></td>
+                <td>Sarah Johnson</td>
+                <td>Wireless Headphones</td>
+                <td class="amount">$129.99</td>
+                <td><span class="status delivered">Delivered</span></td>
+              </tr>
+              <tr>
+                <td><span class="order-id">#ORD-1846</span></td>
+                <td>Michael Chen</td>
+                <td>Smart Watch Pro</td>
+                <td class="amount">$299.00</td>
+                <td><span class="status processing">Processing</span></td>
+              </tr>
+              <tr>
+                <td><span class="order-id">#ORD-1845</span></td>
+                <td>Emma Davis</td>
+                <td>Laptop Stand</td>
+                <td class="amount">$49.99</td>
+                <td><span class="status delivered">Delivered</span></td>
+              </tr>
+              <tr>
+                <td><span class="order-id">#ORD-1844</span></td>
+                <td>James Wilson</td>
+                <td>Mechanical Keyboard</td>
+                <td class="amount">$159.99</td>
+                <td><span class="status pending">Pending</span></td>
+              </tr>
+              <tr>
+                <td><span class="order-id">#ORD-1843</span></td>
+                <td>Lisa Anderson</td>
+                <td>USB-C Hub</td>
+                <td class="amount">$39.99</td>
+                <td><span class="status delivered">Delivered</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Top Products -->
+      <div class="content-card">
+        <div class="card-header">
+          <h2>Top Products</h2>
+          <span class="subtitle">This Month</span>
+        </div>
+        <div class="products-list">
+          <div class="product-item">
+            <div class="product-info">
+              <div class="product-icon">🎧</div>
+              <div>
+                <div class="product-name">Wireless Headphones</div>
+                <div class="product-sales">284 sales</div>
+              </div>
+            </div>
+            <div class="product-revenue">$36,916</div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <div class="product-icon">⌚</div>
+              <div>
+                <div class="product-name">Smart Watch Pro</div>
+                <div class="product-sales">192 sales</div>
+              </div>
+            </div>
+            <div class="product-revenue">$57,408</div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <div class="product-icon">⌨️</div>
+              <div>
+                <div class="product-name">Mechanical Keyboard</div>
+                <div class="product-sales">156 sales</div>
+              </div>
+            </div>
+            <div class="product-revenue">$24,958</div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <div class="product-icon">💻</div>
+              <div>
+                <div class="product-name">Laptop Stand</div>
+                <div class="product-sales">147 sales</div>
+              </div>
+            </div>
+            <div class="product-revenue">$7,345</div>
+          </div>
+
+          <div class="product-item">
+            <div class="product-info">
+              <div class="product-icon">🔌</div>
+              <div>
+                <div class="product-name">USB-C Hub</div>
+                <div class="product-sales">128 sales</div>
+              </div>
+            </div>
+            <div class="product-revenue">$5,119</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
