@@ -45,10 +45,48 @@ ng serve
 
 # Build for production
 ng build
-
-# Run unit tests
-ng test
 ```
+
+## 🧪 Testing
+
+This project includes comprehensive test coverage with both unit and E2E tests.
+
+### Unit Tests
+
+```bash
+# Run tests in watch mode
+npm test
+
+# Run tests with UI
+npm run test:ui
+
+# Generate coverage report
+npm run test:coverage
+```
+
+**Test Coverage:**
+- ✅ App component rendering
+- ✅ Stats display and formatting
+- ✅ Chart component integration
+- ✅ Responsive layout verification
+
+### E2E Tests
+
+```bash
+# Run E2E tests
+npm run test:e2e
+
+# Run E2E tests with UI
+npm run test:e2e:ui
+```
+
+**E2E Test Scenarios:**
+- ✅ Dashboard loads successfully
+- ✅ Display all stats cards
+- ✅ Render charts correctly
+- ✅ Show order data
+- ✅ Responsive layout (mobile/desktop)
+- ✅ Interactive elements work properly
 
 ## 🚀 Usage
 
