@@ -6,17 +6,19 @@
 
 body {
   font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #0d1f17 0%, #1a2f26 50%, #0f2419 100%);
-  color: #e8f5e9;
+  background: #1e293b;
+  color: #ffffff;
   min-height: 100vh;
 }
 
+/* Professional Forest Green/Slate Palette - 508 Compliant */
 :root {
-  --primary-green: #10b981;
-  --secondary-teal: #14b8a6;
-  --dark-bg: #0d1f17;
-  --card-bg: #1a2f26;
-  --border-color: #10b981;
-  --text-light: #e8f5e9;
-  --text-muted: #94a3b8;
+  --primary-green: #047857;
+  --secondary-slate: #475569;
+  --dark-bg: #1e293b;
+  --card-bg: #334155;
+  --border-color: #475569;
+  --text-light: #ffffff;
+  --text-muted: #cbd5e1;
+  --accent-emerald: #10b981;
 }
